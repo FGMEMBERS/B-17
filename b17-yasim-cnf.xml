@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Boeing B17
+May 2008 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="b17-base.xml">
+
+  <sim>
+
+    <description>Boeing B 17 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>b17-yasim</aero>
+
+  </sim>
+    
+</PropertyList>

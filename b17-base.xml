@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>BARANGER Emmanuel (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>0.8</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/B-17/b17-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/B-17/Models/b17.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <sound>
+      <path>Aircraft/B-17/Sounds/b17-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
+    </multiplay>
+
+    <flaps>
+      <setting>0.000</setting>
+      <setting>0.25</setting>
+      <setting>0.50</setting>
+      <setting>0.75</setting>
+      <setting>1.000</setting>
+    </flaps>
+
+    <help>
+      <title>Boeing B 17</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close door</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/b17-menu.xml"/>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="2">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="3">
+        <magnetos>3</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm>500</rpm>
+      <running>true</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm>500</rpm>
+      <running>true</running>
+    </engine>
+    <engine n="2">
+      <engine-num type="int">2</engine-num>
+      <rpm>500</rpm>
+      <running>true</running>
+    </engine>
+    <engine n="3">
+      <engine-num type="int">3</engine-num>
+      <rpm>500</rpm>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/b17-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <b17>
+      <file>Aircraft/B-17/Nasal/doors.nas</file>
+      <file>Aircraft/B-17/Nasal/liveries.nas</file>
+    </b17>
+  </nasal>
+
+</PropertyList>
+
