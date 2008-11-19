@@ -53,6 +53,13 @@
     <object-name>tourelle1</object-name>
     <object-name>tourelle2</object-name>
     <object-name>cables</object-name>
+    <object-name>caches</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeG3</object-name>
+    <object-name>axeD</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>axeD3</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -122,6 +129,13 @@
     <object-name>tourelle1</object-name>
     <object-name>tourelle2</object-name>
     <object-name>cables</object-name>
+    <object-name>caches</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeG3</object-name>
+    <object-name>axeD</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>axeD3</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -568,7 +582,34 @@
   <!-- Rentré des roues -->
   <animation>
     <type>rotate</type>
+    <object-name>axeG2</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 50.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -5.452 </x-m>
+      <y-m> -2.780 </y-m>
+      <z-m> -2.420 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 1.00 </y>
+      <z> 0.00 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>RoueCompleteG</name>
     <object-name>roueG</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeG2</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueCompleteG</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
@@ -576,7 +617,7 @@
     </interpolation>
     <center>
       <x-m> -4.704 </x-m>
-      <y-m> -3.148 </y-m>
+      <y-m> -2.780 </y-m>
       <z-m> -0.746 </z-m>
     </center>
     <axis>
@@ -588,7 +629,54 @@
 
   <animation>
     <type>rotate</type>
+    <object-name>axeG3</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -7.265 </x-m>
+      <y-m> -2.780 </y-m>
+      <z-m> -0.654 </z-m>
+    </center>
+    <axis>
+      <x>  0.00 </x>
+      <y> -1.00 </y>
+      <z>  0.00 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axeD2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 50.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -5.452 </x-m>
+      <y-m>  2.780 </y-m>
+      <z-m> -2.420 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 1.00 </y>
+      <z> 0.00 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>RoueCompleteD</name>
     <object-name>roueD</object-name>
+    <object-name>axeD</object-name>
+    <object-name>axeD2</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueCompleteD</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
@@ -596,13 +684,33 @@
     </interpolation>
     <center>
       <x-m> -4.704 </x-m>
-      <y-m> -3.148 </y-m>
+      <y-m> -2.780 </y-m>
       <z-m> -0.746 </z-m>
     </center>
     <axis>
       <x> 0.00 </x>
       <y> 1.00 </y>
       <z> 0.00 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axeD3</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -7.265 </x-m>
+      <y-m>  2.780 </y-m>
+      <z-m> -0.654 </z-m>
+    </center>
+    <axis>
+      <x>  0.00 </x>
+      <y> -1.00 </y>
+      <z>  0.00 </z>
     </axis>
   </animation>
 
