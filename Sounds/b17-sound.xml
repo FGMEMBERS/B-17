@@ -1,108 +1,107 @@
 <?xml version="1.0"?>
  
-<!-- Système sonore du P51 depuis le Beaufighter -->
 <PropertyList>
 
- <fx>
- 
-<!-- Moteur 1 -->
+  <fx>
+
+  <!-- Moteur 1 -->
   <crank>
-   <name>engstart</name>
-   <path>Sounds/engstart.wav</path>
-   <property>/engines/engine[0]/cranking</property>
-   <volume>
-    <offset>-0.4</offset>
-   </volume>
+    <name>engstart</name>
+    <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
+    <property>/engines/engine[0]/cranking</property>
+    <volume>
+      <offset>-0.4</offset>
+    </volume>
   </crank>
 
   <crank>
-   <name>crank</name>
-   <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_starter.wav</path>
-   <condition>
-    <property>/engines/engine[0]/cranking</property>
-    <not>
-     <property>/engines/engine[0]/running</property>
-    </not>
-   </condition>
-   <volume>
-    <offset>-0.5</offset>
-   </volume>
-   <pitch>
-    <property>/engines/engine[0]/cranking</property>
-    <factor>1.0</factor>
-   </pitch>
+    <name>crank</name>
+    <mode>looped</mode>
+    <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
+    <condition>
+      <property>/engines/engine[0]/cranking</property>
+      <not>
+        <property>/engines/engine[0]/running</property>
+      </not>
+    </condition>
+    <volume>
+      <offset>-0.5</offset>
+    </volume>
+    <pitch>
+      <property>/engines/engine[0]/cranking</property>
+      <factor>1.0</factor>
+    </pitch>
   </crank>
 
   <crank>
-   <name>cough</name>
-   <path>Aircraft/B-17/Sounds/p51d_startup.wav</path>
-   <property>/engines/engine[0]/running</property>
-   <volume>
-    <offset>-0.50</offset>
-   </volume>
-   <pitch>
+    <name>cough</name>
+    <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
     <property>/engines/engine[0]/running</property>
-    <factor>1.0</factor>
-   </pitch>
+    <volume>
+      <offset>-0.50</offset>
+    </volume>
+    <pitch>
+      <property>/engines/engine[0]/running</property>
+      <factor>1.0</factor>
+    </pitch>
   </crank>
 
   <engine>
-   <name>engine</name>
-   <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_rpm1.wav</path>
-   <condition>
-    <property>/engines/engine[0]/running</property>
-    <less-than>
-    <property>/engines/engine[0]/rpm</property>
-    <value>5000</value>
-    </less-than>
-   </condition>
-   <volume>
-    <property>/engines/engine[0]/rpm</property>
-    <factor>0.00033</factor>
-    <min>0.2</min>
-    <max>1.0</max>
-    <offset>0.0</offset>
-   </volume>
-   <pitch>
-    <property>/engines/engine[0]/rpm</property>
-    <factor>0.00033</factor>
-    <min>0.0</min>
-    <max>1.0</max>
-   </pitch>
+    <name>engine</name>
+    <mode>looped</mode>
+    <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
+    <condition>
+      <property>/engines/engine[0]/running</property>
+      <less-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>5000</value>
+      </less-than>
+    </condition>
+    <volume>
+      <property>/engines/engine[0]/rpm</property>
+      <factor>0.00033</factor>
+      <min>0.2</min>
+      <max>1.0</max>
+      <offset>0.0</offset>
+    </volume>
+    <pitch>
+      <property>/engines/engine[0]/rpm</property>
+      <factor>0.00033</factor>
+      <min>0.0</min>
+      <max>1.0</max>
+    </pitch>
   </engine>
 
   <engine>
-   <name>enginerun</name>
-   <mode>looped</mode>
-   <path>Sounds/wasp.wav</path>
-   <condition>
-    <property>/engines/engine[0]/running</property>
-    <greater-than>
-    <property>/engines/engine[0]/rpm</property>
-    <value>400</value>
-    </greater-than>
-   </condition>
-   <volume>
-    <property>/engines/engine[0]/rpm</property>
-    <factor>0.00033</factor>
-    <min>0.0</min>
-    <max>1.00</max>
-    <offset>0.0</offset>
-   </volume>
-   <pitch>
-    <property>/engines/engine[0]/rpm</property>
-    <factor>0.00033</factor>
-    <min>0.0</min>
-    <max>1.0</max>
-   </pitch>
+    <name>enginerun</name>
+    <mode>looped</mode>
+    <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
+    <condition>
+      <property>/engines/engine[0]/running</property>
+      <greater-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>400</value>
+      </greater-than>
+    </condition>
+    <volume>
+      <property>/engines/engine[0]/rpm</property>
+      <factor>0.00033</factor>
+      <min>0.0</min>
+      <max>1.00</max>
+      <offset>0.0</offset>
+    </volume>
+    <pitch>
+      <property>/engines/engine[0]/rpm</property>
+      <factor>0.00033</factor>
+      <min>0.0</min>
+      <max>1.0</max>
+    </pitch>
   </engine>
 
 <!-- Moteur 2 -->
   <crank>
    <name>engstart</name>
-   <path>Sounds/engstart.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <property>/engines/engine[1]/cranking</property>
    <volume>
     <offset>-0.4</offset>
@@ -112,7 +111,7 @@
   <crank>
    <name>crank</name>
    <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_starter.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <condition>
     <property>/engines/engine[1]/cranking</property>
     <not>
@@ -130,7 +129,7 @@
 
   <crank>
    <name>cough</name>
-   <path>Aircraft/B-17/Sounds/p51d_startup.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <property>/engines/engine[1]/running</property>
    <volume>
     <offset>-0.50</offset>
@@ -144,7 +143,7 @@
   <engine>
    <name>engine</name>
    <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_rpm1.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
    <condition>
     <property>/engines/engine[1]/running</property>
     <less-than>
@@ -170,7 +169,7 @@
   <engine>
    <name>enginerun</name>
    <mode>looped</mode>
-   <path>Sounds/wasp.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
    <condition>
     <property>/engines/engine[1]/running</property>
     <greater-than>
@@ -196,7 +195,7 @@
 <!-- Moteur 3 -->
   <crank>
    <name>engstart</name>
-   <path>Sounds/engstart.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <property>/engines/engine[2]/cranking</property>
    <volume>
     <offset>-0.4</offset>
@@ -206,7 +205,7 @@
   <crank>
    <name>crank</name>
    <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_starter.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <condition>
     <property>/engines/engine[2]/cranking</property>
     <not>
@@ -224,7 +223,7 @@
 
   <crank>
    <name>cough</name>
-   <path>Aircraft/B-17/Sounds/p51d_startup.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <property>/engines/engine[2]/running</property>
    <volume>
     <offset>-0.50</offset>
@@ -238,7 +237,7 @@
   <engine>
    <name>engine</name>
    <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_rpm1.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
    <condition>
     <property>/engines/engine[2]/running</property>
     <less-than>
@@ -264,7 +263,7 @@
   <engine>
    <name>enginerun</name>
    <mode>looped</mode>
-   <path>Sounds/wasp.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
    <condition>
     <property>/engines/engine[2]/running</property>
     <greater-than>
@@ -290,7 +289,7 @@
 <!-- Moteur 4 -->
   <crank>
    <name>engstart</name>
-   <path>Sounds/engstart.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <property>/engines/engine[3]/cranking</property>
    <volume>
     <offset>-0.4</offset>
@@ -300,7 +299,7 @@
   <crank>
    <name>crank</name>
    <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_starter.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <condition>
     <property>/engines/engine[3]/cranking</property>
     <not>
@@ -318,7 +317,7 @@
 
   <crank>
    <name>cough</name>
-   <path>Aircraft/B-17/Sounds/p51d_startup.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-starter.wav</path>
    <property>/engines/engine[3]/running</property>
    <volume>
     <offset>-0.50</offset>
@@ -332,7 +331,7 @@
   <engine>
    <name>engine</name>
    <mode>looped</mode>
-   <path>Aircraft/B-17/Sounds/p51d_rpm1.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
    <condition>
     <property>/engines/engine[3]/running</property>
     <less-than>
@@ -358,7 +357,7 @@
   <engine>
    <name>enginerun</name>
    <mode>looped</mode>
-   <path>Sounds/wasp.wav</path>
+   <path>Aircraft/B-17/Sounds/R1820-running.wav</path>
    <condition>
     <property>/engines/engine[3]/running</property>
     <greater-than>
