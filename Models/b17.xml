@@ -64,6 +64,7 @@
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
     <object-name>verretourelle1</object-name>
+    <object-name>verretourelle2</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
     <object-name>propblurGI</object-name>
@@ -80,12 +81,14 @@
     <texture>glass_shader.png</texture>
     <object-name>verriere</object-name>
     <object-name>verretourelle1</object-name>
+    <object-name>verretourelle2</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
     <object-name>verretourelle1</object-name>
+    <object-name>verretourelle2</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
     <object-name>propblurGI</object-name>
