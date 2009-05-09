@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <PropertyList>
   <sim>
     <model>
       <livery>
-        <name type="string">Default</name>
-        <texture>texture.png</texture>
+        <name type="string">Sugar</name>
+        <texture>Liveries/GD-L.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

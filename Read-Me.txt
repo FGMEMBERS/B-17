@@ -6,7 +6,7 @@ English/Français
 A little history
 ================
 
-Breguet Br-761 "Deux Ponts"
+Boeing B 17 Flying Fortress
 ===========================
 
 Manufacturer                  : 
@@ -27,10 +27,12 @@ Some useful keys:
 Thanks
 ======
 
+Bret HARRISON for new liveries
+Detlef FABER for changes on 3D model
+
 ===============
 BARANGER Emmanuel
-July, 17, 2007. 
-September, 15, 2007.
+May, 09, 2009. 
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
@@ -42,8 +44,8 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-Breguet Br-761 "Deux Ponts"
-===========================
+Boeing B 17 "Forteresse volante"
+================================
 
 Constructeur                  :
 Type                          :
@@ -64,10 +66,12 @@ Quelques touches utiles :
 Remerciements
 =============
 
+Brett HARRISON pour les nouvelle livrées.
+Detlef FABER pour les modifications du modèle 3D
+
 ===============
 BARANGER Emmanuel
-17 Juillet 2007.
-15 Septembre 2007.
+09 Mai 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

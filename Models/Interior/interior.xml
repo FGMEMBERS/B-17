@@ -11,6 +11,25 @@
     <object-name>tour</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intverretourelle1</object-name>
+    <object-name>intverretourelle2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverretourelle1</object-name>
+    <object-name>intverretourelle2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intverretourelle1</object-name>
+    <object-name>intverretourelle2</object-name>
   </animation>
 
   <!-- Pilote -->

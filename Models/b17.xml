@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -60,6 +60,15 @@
     <object-name>axeD</object-name>
     <object-name>axeD2</object-name>
     <object-name>axeD3</object-name>
+    <object-name>trous</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>ailetteDE</object-name>
+    <object-name>ailetteDI</object-name>
+    <object-name>ailetteGE</object-name>
+    <object-name>ailetteGI</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -142,6 +151,15 @@
     <object-name>axeD</object-name>
     <object-name>axeD2</object-name>
     <object-name>axeD3</object-name>
+    <object-name>trous</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>ailetteDE</object-name>
+    <object-name>ailetteDI</object-name>
+    <object-name>ailetteGE</object-name>
+    <object-name>ailetteGI</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -512,9 +530,9 @@
     <property>controls/flight/elevator</property>
     <factor> 25 </factor>
     <center>
-     <x-m> 7.872 </x-m>
+     <x-m> 7.998 </x-m>
      <y-m> 0.000 </y-m>
-     <z-m> 0.120 </z-m>
+     <z-m> 0.357 </z-m>
     </center>
     <axis>
       <x> 0.000 </x>
