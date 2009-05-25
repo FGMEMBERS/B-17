@@ -60,15 +60,19 @@
   <controls>
     <engines>
       <engine n="0">
+				<boost type="double">0</boost>
         <magnetos>3</magnetos>
       </engine>
       <engine n="1">
+				<boost type="double">0</boost>
         <magnetos>3</magnetos>
       </engine>
       <engine n="2">
+				<boost type="double">0</boost>
         <magnetos>3</magnetos>
       </engine>
       <engine n="3">
+				<boost type="double">0</boost>
         <magnetos>3</magnetos>
       </engine>
     </engines>

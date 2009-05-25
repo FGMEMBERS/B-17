@@ -1,4 +1,4 @@
-English/Fran√ßais
+English/FranÁais
 
 [English]
 ----------
@@ -18,7 +18,6 @@ Length                        :
 Height                        : 
 weight                        : 
 Cruise speed                  : 
-Range                         : 
 Crew                          :  
 
 Some useful keys:
@@ -29,6 +28,7 @@ Thanks
 
 Bret HARRISON for new liveries
 Detlef FABER for changes on 3D model
+Detlef FABER for changes on FDM
 
 ===============
 BARANGER Emmanuel
@@ -38,7 +38,7 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[Fran√ßais]
+[FranÁais]
 ----------
 
 Un peu d'histoire
@@ -49,14 +49,13 @@ Boeing B 17 "Forteresse volante"
 
 Constructeur                  :
 Type                          :
-Ann√©e                         :
+AnnÈe                         :
 Moteur                        :
 Envergure                     :
 Longueur                      :
 Hauteur                       :
-Poids estim√© au d√©collage     :
-Vitesse estim√©e de croisi√®re  :
-Autonomie estim√©e             :
+Poids ‡ vide                  :
+Vitesse de croisiËre          :
 Equipage                      :
 
 
@@ -66,8 +65,9 @@ Quelques touches utiles :
 Remerciements
 =============
 
-Brett HARRISON pour les nouvelle livr√©es.
-Detlef FABER pour les modifications du mod√®le 3D
+Brett HARRISON pour les nouvelle livrÈes.
+Detlef FABER pour les modifications du modËle 3D
+Detlef FABER pour les changements sur le FDM
 
 ===============
 BARANGER Emmanuel
