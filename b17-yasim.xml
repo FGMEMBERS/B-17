@@ -79,7 +79,7 @@
           <flap0 start="0.023" end="0.527" lift="1.8" drag="1.6"/>
           <flap1 start="0.536" end="0.925" lift="1.6" drag="1.1"/>
 
-          <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+          <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
           <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
           <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
 
