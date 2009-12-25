@@ -109,6 +109,7 @@
     <b17>
       <file>Aircraft/B-17/Nasal/doors.nas</file>
       <file>Aircraft/B-17/Nasal/liveries.nas</file>
+      <file>Aircraft/B-17/Nasal/light.nas</file>
     </b17>
   </nasal>
 
