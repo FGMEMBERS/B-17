@@ -85,30 +85,6 @@
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>verretourelle1</object-name>
-    <object-name>verretourelle2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>verretourelle1</object-name>
-    <object-name>verretourelle2</object-name>
-    <object-name>propblurGE</object-name>
-    <object-name>propdiscGE</object-name>
-    <object-name>propblurGI</object-name>
-    <object-name>propdiscGI</object-name>
-    <object-name>propblurGI</object-name>
-    <object-name>propdiscGI</object-name>
-    <object-name>propblurGE</object-name>
-    <object-name>propdiscGE</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
@@ -193,6 +169,56 @@
       <shininess-prop>shininess</shininess-prop>
     </shininess>
 -->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/B-17/Models/Effects/B17reflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>antenne</object-name>
+    <object-name>blindage</object-name>
+    <object-name>bendix1</object-name>
+    <object-name>bendix2</object-name>
+    <object-name>tourelle1</object-name>
+    <object-name>tourelle2</object-name>
+    <object-name>cables</object-name>
+    <object-name>caches</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>ailetteDE</object-name>
+    <object-name>ailetteDI</object-name>
+    <object-name>ailetteGE</object-name>
+    <object-name>ailetteGI</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>verretourelle1</object-name>
+    <object-name>verretourelle2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>verretourelle1</object-name>
+    <object-name>verretourelle2</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propdiscGE</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propdiscGE</object-name>
   </animation>
 
   <!-- Une ombre pour OSG -->
@@ -323,9 +349,9 @@
       <z-m> -0.184 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -388,9 +414,9 @@
       <z-m> -0.585 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -453,9 +479,9 @@
       <z-m> -0.585 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -518,9 +544,9 @@
       <z-m> -0.184 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -552,9 +578,9 @@
      <z-m> 0.357 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -635,9 +661,9 @@
       <z-m> -2.420 </z-m>
     </center>
     <axis>
-      <x> 0.00 </x>
-      <y> 1.00 </y>
-      <z> 0.00 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -662,9 +688,9 @@
       <z-m> -0.746 </z-m>
     </center>
     <axis>
-      <x> 0.00 </x>
-      <y> 1.00 </y>
-      <z> 0.00 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -682,9 +708,9 @@
       <z-m> -0.654 </z-m>
     </center>
     <axis>
-      <x>  0.00 </x>
-      <y> -1.00 </y>
-      <z>  0.00 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -702,9 +728,9 @@
       <z-m> -2.420 </z-m>
     </center>
     <axis>
-      <x> 0.00 </x>
-      <y> 1.00 </y>
-      <z> 0.00 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -729,9 +755,9 @@
       <z-m> -0.746 </z-m>
     </center>
     <axis>
-      <x> 0.00 </x>
-      <y> 1.00 </y>
-      <z> 0.00 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -749,9 +775,9 @@
       <z-m> -0.654 </z-m>
     </center>
     <axis>
-      <x>  0.00 </x>
-      <y> -1.00 </y>
-      <z>  0.00 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -769,9 +795,9 @@
       <z-m> -0.671 </z-m>
     </center>
     <axis>
-      <x>  0.00 </x>
-      <y> -1.00 </y>
-      <z>  0.00 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -787,9 +813,9 @@
       <z-m> -2.409 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -804,9 +830,9 @@
       <z-m> -2.409 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -821,9 +847,9 @@
       <z-m> -1.404 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -872,6 +898,47 @@
       <z-m>  0.572 </z-m>
     </offsets>
   </model>
+
+  <!-- Wing light cone left -->
+  <model>
+    <name>Left-Taxi-Light</name>
+    <path>Aircraft/B-17/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>          -5.038 </x-m>
+      <y-m>          -8.875 </y-m>
+      <z-m>          -0.003 </z-m>
+      <pitch-deg>    -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Wing light cone right -->
+  <model>
+    <name>Right-Taxi-Light</name>
+    <path>Aircraft/B-17/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>          -5.038 </x-m>
+      <y-m>           8.875 </y-m>
+      <z-m>          -0.003 </z-m>
+      <pitch-deg>    -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>All-Taxi-Light</name>
+    <object-name>Left-Taxi-Light</object-name>
+    <object-name>Right-Taxi-Light</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>All-Taxi-Light</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
 
 </PropertyList>
 

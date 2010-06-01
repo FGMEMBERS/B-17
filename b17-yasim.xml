@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Boeing B 17 BARANGER Emmanuel (2008) 
+<!-- Boeing B 17     : 2008 BARANGER Emmanuel
+                     : 2010 updated BARANGER Emmanuel 
+
+     sources         : http://en.wikipedia.org/wiki/B-17_Flying_Fortress
 
      Wingspan        : 31.62 m   (103 ft 9 in)
      Lenght          : 22.66 m   ( 74 ft 4 in)
      Height          :  5.80 m   ( 19 ft 1 in)
      Empty mass      : 16391 kg  (36135 lb)
      Cruise speed    :   158 kts (293 km/h)
+     Engines         : 4 Wright R-1820-97 "Cyclone" turbosupercharged radial engines (1200 hp each)
 -->
 
-<airplane mass="32720">
+<airplane mass="36135">
 
-    <approach speed="120" aoa="8.4" fuel="0.2">
+    <approach speed="72" aoa="7.5" fuel="0.3">
       <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
       <control-setting axis="/controls/engines/engine[1]/throttle" value="0.5"/>
       <control-setting axis="/controls/engines/engine[2]/throttle" value="0.5"/>
       <control-setting axis="/controls/engines/engine[3]/throttle" value="0.5"/>
 
-      <control-setting axis="/controls/engines/engine[0]/boost" value="0.0"/>
-      <control-setting axis="/controls/engines/engine[1]/boost" value="0.0"/>
-      <control-setting axis="/controls/engines/engine[2]/boost" value="0.0"/>
-      <control-setting axis="/controls/engines/engine[3]/boost" value="0.0"/>
+      <control-setting axis="/controls/engines/engine[0]/boost" value="0"/>
+      <control-setting axis="/controls/engines/engine[1]/boost" value="0"/>
+      <control-setting axis="/controls/engines/engine[2]/boost" value="0"/>
+      <control-setting axis="/controls/engines/engine[3]/boost" value="0"/>
 
-      <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[2]/mixture" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[3]/mixture" value="1.0"/>
+      <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+      <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
+      <control-setting axis="/controls/engines/engine[2]/mixture" value="1"/>
+      <control-setting axis="/controls/engines/engine[3]/mixture" value="1"/>
 
       <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.77"/>
       <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.77"/>
       <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="0.77"/>
       <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0.77"/>
 
-      <control-setting axis="/controls/flight/flaps" value="1.0"/>
+      <control-setting axis="/controls/flight/flaps" value="1"/>
       <control-setting axis="/controls/gear/gear-down" value="1"/>
     </approach>
 
-    <cruise speed="250" alt="25000" fuel="0.5">
-      <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[2]/throttle" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[3]/throttle" value="1.0"/>
+    <cruise speed="158" alt="35000" fuel="0.7">
+      <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+      <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+      <control-setting axis="/controls/engines/engine[2]/throttle" value="1"/>
+      <control-setting axis="/controls/engines/engine[3]/throttle" value="1"/>
 
-      <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[2]/boost" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[3]/boost" value="1.0"/>
+      <control-setting axis="/controls/engines/engine[0]/boost" value="1"/>
+      <control-setting axis="/controls/engines/engine[1]/boost" value="1"/>
+      <control-setting axis="/controls/engines/engine[2]/boost" value="1"/>
+      <control-setting axis="/controls/engines/engine[3]/boost" value="1"/>
 
       <control-setting axis="/controls/engines/engine[0]/mixture" value="0.3"/>
       <control-setting axis="/controls/engines/engine[1]/mixture" value="0.3"/>
       <control-setting axis="/controls/engines/engine[2]/mixture" value="0.3"/>
       <control-setting axis="/controls/engines/engine[3]/mixture" value="0.3"/>
 
-      <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1.0"/>
-      <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1.0"/>
+      <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+      <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+      <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
+      <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
 
-      <control-setting axis="/controls/flight/flaps" value="0.0"/>
+      <control-setting axis="/controls/flight/flaps" value="0"/>
       <control-setting axis="/controls/gear/gear-down" value="0"/>
     </cruise>
 
@@ -74,7 +78,7 @@
           sweep="1.4" 
 	  incidence="3.5"
           dihedral="5"
-          camber="-0.23">
+          camber="0.01">
           <stall aoa="9" width="8" peak="3.5"/>
           <flap0 start="0.023" end="0.527" lift="1.8" drag="1.6"/>
           <flap1 start="0.536" end="0.925" lift="1.6" drag="1.1"/>
@@ -121,14 +125,15 @@
            <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
     </vstab>
 
-    <!-- Informations Wikipedia
+    <!-- Engines 
 
-         Engines : Wright R1820
-                 : 9 cylinders
-                 : Displacement 1823 (29.88 l)
-                 : Masse 1184 lb (583 kg)
-                 : Cruise RPM 2200
-                 : Compression 6.45:1
+         source  : http://en.wikipedia.org/wiki/Wright_R-1820
+
+         type         : Nine-cylinder single-row supercharged air-cooled radial engine
+         weight       :  537 kg (1184 lb)
+         power        : 1000 hp at 2200 rpm for takeoff
+         Displacement : 1823 in3 (29.88 l)
+         Compression  : 6.45:1
     -->
     <!-- Engine left exterior-->
     <propeller x="7.398" y="6.505" z="-0.184"
@@ -140,7 +145,7 @@
                cruise-speed="230"
                cruise-rpm="1400"
                cruise-power="1000"
-               cruise-alt="17000">
+               cruise-alt="35000">
                <actionpt x="7.839" y="6.505" z="-0.184"/>
                <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
                <piston-engine eng-power="1200" 
@@ -167,7 +172,7 @@
                cruise-speed="230"
                cruise-rpm="1400"
                cruise-power="1000"
-               cruise-alt="17000">
+               cruise-alt="35000">
                <actionpt x="8.420" y="3.021" z="-0.585"/>
                <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
                <piston-engine eng-power="1200" 
@@ -194,7 +199,7 @@
                cruise-speed="230"
                cruise-rpm="1400"
                cruise-power="1000"
-               cruise-alt="17000">
+               cruise-alt="35000">
                <actionpt x="8.420" y="-3.021" z="-0.585"/>
                <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
                <piston-engine eng-power="1200" 
@@ -221,7 +226,7 @@
                cruise-speed="230"
                cruise-rpm="1400"
                cruise-power="1000"
-               cruise-alt="17000">
+               cruise-alt="35000">
                <actionpt x="7.839" y="-6.505" z="-0.184"/>
                <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
                <piston-engine eng-power="1200" 
