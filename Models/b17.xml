@@ -172,7 +172,7 @@
   </animation>
 
   <effect>
-    <inherits-from>Aircraft/B-17/Models/Effects/B17reflect</inherits-from>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>ailes2</object-name>
