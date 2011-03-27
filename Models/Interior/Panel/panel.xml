@@ -11,6 +11,16 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- Switch Landing Light -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m>  0.231 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.080 </z-m>
+    </offsets>
+  </model>
+
   <!-- AI -->
   <model>
     <path>Aircraft/B-17/Models/Interior/Panel/Instruments/ai/ai.xml</path>
