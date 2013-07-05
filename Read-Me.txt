@@ -28,7 +28,6 @@ Thanks
 
 Bret HARRISON for new liveries
 Detlef FABER for changes on 3D model
-Detlef FABER for changes on FDM
 
 ===============
 BARANGER Emmanuel
@@ -67,7 +66,6 @@ Remerciements
 
 Brett HARRISON pour les nouvelle livrées.
 Detlef FABER pour les modifications du modèle 3D
-Detlef FABER pour les changements sur le FDM
 
 ===============
 BARANGER Emmanuel

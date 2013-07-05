@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,8 +8,9 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>interieur2</object-name>
-    <object-name>tour</object-name>
-
+    <object-name>inttour</object-name>
+    <object-name>planchet</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intverriere</object-name>
     <object-name>intverretourelle1</object-name>
@@ -32,31 +33,16 @@
     <object-name>intverretourelle2</object-name>
   </animation>
 
-  <!-- Pilote -->
-  <model>
-    <path>Aircraft/B-17/Models/Pilot/pilot.xml</path>
-    <offsets>
-      <x-m> -7.728 </x-m>
-      <y-m> -0.292 </y-m>
-      <z-m>  0.485 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg>   0.0 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Motrailleur de queue -->
-  <model>
-    <path>Aircraft/B-17/Models/Pilot/pilot.xml</path>
-    <offsets>
-      <x-m> 10.512 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.262 </z-m>
-      <roll-deg>      0.0 </roll-deg>
-      <pitch-deg>     0.0 </pitch-deg>
-      <heading-deg> 180.0 </heading-deg>
-    </offsets>
-  </model>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intverriere</object-name>
+    <object-name>intverretourelle1</object-name>
+    <object-name>intverretourelle2</object-name>
+  </effect>
 
   <!-- Planche de bord -->
   <model>
@@ -68,5 +54,45 @@
     </offsets>
   </model>
 
-</PropertyList>
+  <!-- Seat pilote -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -7.150 </x-m>
+      <y-m> -0.390 </y-m>
+      <z-m>  0.246 </z-m>
+    </offsets>
+  </model>
 
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/B-17/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -7.430 </x-m>
+      <y-m> -0.380 </y-m>
+      <z-m>  0.490 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Seat copilote -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -7.150 </x-m>
+      <y-m>  0.390 </y-m>
+      <z-m>  0.246 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Mitrailleur de queue -->
+  <model>
+    <path>Aircraft/B-17/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> 10.512 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.262 </z-m>
+      <heading-deg> 180.0 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

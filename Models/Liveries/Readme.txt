@@ -1,3 +1,7 @@
+default
+
+These liveries were made by : Emmanuel BARANGER 2009
+
 398bg
 
 447bg
@@ -17,5 +21,3 @@ Memphis-Belle
 These liveries were made by : Alex LERR 2009
 
 Thanks to him.
-
-

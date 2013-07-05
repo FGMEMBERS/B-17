@@ -69,12 +69,6 @@
     <object-name>heliceGI</object-name>
     <object-name>heliceDI</object-name>
     <object-name>heliceDE</object-name>
-    <object-name>armes1</object-name>
-    <object-name>armes2</object-name>
-    <object-name>armes3</object-name>
-    <object-name>armes4</object-name>
-    <object-name>armes5</object-name>
-    <object-name>armes6</object-name>
     <object-name>axeG</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeG3</object-name>
@@ -84,7 +78,8 @@
     <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
     <object-name>roueA</object-name>
-
+    <object-name>cables</object-name>
+    
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
     <object-name>verretourelle1</object-name>
@@ -97,7 +92,6 @@
     <object-name>propdiscGI</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
-    <object-name>cables</object-name>
   </animation>
 
   <animation>
@@ -142,12 +136,6 @@
     <object-name>heliceGI</object-name>
     <object-name>heliceDI</object-name>
     <object-name>heliceDE</object-name>
-    <object-name>armes1</object-name>
-    <object-name>armes2</object-name>
-    <object-name>armes3</object-name>
-    <object-name>armes4</object-name>
-    <object-name>armes5</object-name>
-    <object-name>armes6</object-name>
     <object-name>axeG</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeG3</object-name>
@@ -157,43 +145,68 @@
     <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
     <object-name>roueA</object-name>
-
+    <object-name>cables</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>moteurGE</object-name>
+    <object-name>ailetteGE</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>moteurGI</object-name>
+    <object-name>ailetteGI</object-name>
+    <object-name>bolGI</object-name>
+    <object-name>moteurDI</object-name>
+    <object-name>ailetteDI</object-name>
+    <object-name>bolDI</object-name>
+    <object-name>moteurDE</object-name>
+    <object-name>ailetteDE</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>antenne</object-name>
+    <object-name>blindage</object-name>
+    <object-name>bendix1</object-name>
+    <object-name>bendix2</object-name>
+    <object-name>tourelle1</object-name>
+    <object-name>tourelle2</object-name>
+    <object-name>caches</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>aileronG</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
@@ -251,42 +264,123 @@
     <object-name>propdiscGI</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
-    <object-name>cables</object-name>
   </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>verriere</object-name>
+    <object-name>verretourelle1</object-name>
+    <object-name>verretourelle2</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propdiscGE</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propblurGE</object-name>
+    <object-name>propdiscGE</object-name>
+  </effect>
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/B-17/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.260 </z-m>
+    </offsets>
   </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
 
   <!-- Intérieur -->
   <model>
+    <name>Interieur</name>
     <path>Aircraft/B-17/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+
+  <!-- Cranking effects -->
+  <model>
+    <path>Aircraft/B-17/Models/Effects/cranking/crankingLE.xml</path>
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
+      <x-m> -3.64623 </x-m>
+      <y-m> -6.49427 </y-m>
+      <z-m> -0.64719 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Effects/cranking/crankingLI.xml</path>
+    <offsets>
+      <x-m> -3.05902 </x-m>
+      <y-m> -3.02643 </y-m>
+      <z-m> -0.94682 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Effects/cranking/crankingRI.xml</path>
+    <offsets>
+      <x-m> -3.05902 </x-m>
+      <y-m>  3.02643 </y-m>
+      <z-m> -0.94682 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Effects/cranking/crankingRE.xml</path>
+    <offsets>
+      <x-m> -3.64623 </x-m>
+      <y-m>  6.49427 </y-m>
+      <z-m> -0.64719 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/B-17/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -5.452 </x-m>
+      <y-m> -3.148 </y-m>
+      <z-m> -3.125 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/B-17/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -5.452 </x-m>
+      <y-m>  3.148 </y-m>
+      <z-m> -3.125 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue de queue -->
+  <model>
+    <path>Aircraft/B-17/Models/Effects/ground/ground2.xml</path>   
+    <offsets>
+      <x-m>  5.986 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.679 </z-m>
     </offsets>
   </model>
 
   <!-- Les moteurs -->
   <!-- Extérieur gauche -->
   <model>
-    <path>Aircraft/B-17/Models/Engines/r1820.xml</path>
+    <path>Aircraft/B-17/Models/Engines/engine.xml</path>
     <offsets>
-      <x-m> -7.447 </x-m>
+      <x-m> -7.287 </x-m>
       <y-m> -6.505 </y-m>
       <z-m> -0.184 </z-m>
     </offsets>
@@ -294,9 +388,9 @@
 
   <!-- Intérieur gauche -->
   <model>
-    <path>Aircraft/B-17/Models/Engines/r1820.xml</path>
+    <path>Aircraft/B-17/Models/Engines/engine.xml</path>
     <offsets>
-      <x-m> -8.000 </x-m>
+      <x-m> -7.820 </x-m>
       <y-m> -3.021 </y-m>
       <z-m> -0.585 </z-m>
     </offsets>
@@ -304,9 +398,9 @@
 
   <!-- Intérieur droit -->
   <model>
-    <path>Aircraft/B-17/Models/Engines/r1820.xml</path>
+    <path>Aircraft/B-17/Models/Engines/engine.xml</path>
     <offsets>
-      <x-m> -8.000 </x-m>
+      <x-m> -7.820 </x-m>
       <y-m>  3.021 </y-m>
       <z-m> -0.585 </z-m>
     </offsets>
@@ -314,9 +408,9 @@
 
   <!-- Extérieur droit -->
   <model>
-    <path>Aircraft/B-17/Models/Engines/r1820.xml</path>
+    <path>Aircraft/B-17/Models/Engines/engine.xml</path>
     <offsets>
-      <x-m> -7.447 </x-m>
+      <x-m> -7.287 </x-m>
       <y-m>  6.505 </y-m>
       <z-m> -0.184 </z-m>
     </offsets>
@@ -374,6 +468,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGE</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 20 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -439,6 +539,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGI</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value> 20 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -504,6 +610,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteDI</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[2]/rpm</property>
+        <value> 20 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[2]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -569,6 +681,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteDE</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[3]/rpm</property>
+        <value> 20 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[3]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -587,8 +705,8 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>controls/flight/rudder</property>
-    <factor> 25 </factor>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
     <axis>
       <x1-m> 8.718 </x1-m>
       <y1-m> 0.000 </y1-m>
@@ -603,7 +721,7 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>controls/flight/elevator</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <factor> 25 </factor>
     <center>
      <x-m> 7.998 </x-m>
@@ -685,8 +803,8 @@
     <object-name>axeG2</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 50.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 50 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -5.452 </x-m>
@@ -712,8 +830,8 @@
     <object-name>RoueCompleteG</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -4.704 </x-m>
@@ -732,8 +850,8 @@
     <object-name>axeG3</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -7.265 </x-m>
@@ -752,8 +870,8 @@
     <object-name>axeD2</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 50.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 50 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -5.452 </x-m>
@@ -779,8 +897,8 @@
     <object-name>RoueCompleteD</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -4.704 </x-m>
@@ -799,8 +917,8 @@
     <object-name>axeD3</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -7.265 </x-m>
@@ -819,8 +937,8 @@
     <object-name>roueA</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 60.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m>  5.561 </x-m>
@@ -906,6 +1024,15 @@
   </model>
 
   <model>
+    <path>Aircraft/B-17/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -3.186 </x-m>
+      <y-m> -15.760 </y-m>
+      <z-m>   0.572 </z-m>
+    </offsets>
+  </model>
+
+  <model>
     <path>Aircraft/B-17/Models/light/GreenLight.xml</path>
     <offsets>
       <x-m> -3.286 </x-m>
@@ -915,16 +1042,7 @@
   </model>
 
   <model>
-    <path>Aircraft/B-17/Models/light/StrobeWhite.xml</path>
-    <offsets>
-      <x-m>  -3.186 </x-m>
-      <y-m> -15.760 </y-m>
-      <z-m>   0.572 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-17/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/B-17/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -3.186 </x-m>
       <y-m> 15.760 </y-m>
@@ -973,6 +1091,141 @@
     </condition>
   </animation>
 
+  <!-- Mitrailleuses -->
+  <!-- Noze -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -10.59025 </x-m>
+      <y-m>  -0.15710 </y-m>
+      <z-m>  -1.59888 </z-m>
+      <pitch-deg> -30 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -10.59025 </x-m>
+      <y-m>   0.15710 </y-m>
+      <z-m>  -1.59888 </z-m>
+      <pitch-deg> -30 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- down Turet -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m>  0.47656 </x-m>
+      <y-m> -0.14410 </y-m>
+      <z-m> -1.54588 </z-m>
+      <pitch-deg>    -6 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m>  0.47656 </x-m>
+      <y-m>  0.14410 </y-m>
+      <z-m> -1.54588 </z-m>
+      <pitch-deg>    -6 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Left noze -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -9.53098 </x-m>
+      <y-m> -1.05934 </y-m>
+      <z-m> -0.26133 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Right noze -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -9.53098 </x-m>
+      <y-m>  1.05934 </y-m>
+      <z-m> -0.26133 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Up turet -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -5.64344 </x-m>
+      <y-m> -0.15310 </y-m>
+      <z-m>  1.45412 </z-m>
+      <pitch-deg>    15 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -5.64344 </x-m>
+      <y-m>  0.15310 </y-m>
+      <z-m>  1.45412 </z-m>
+      <pitch-deg>    15 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Tail turet -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> 11.280560 </x-m>
+      <y-m> -0.144100 </y-m>
+      <z-m> -0.000876 </z-m>
+      <pitch-deg>    15 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> 11.280560 </x-m>
+      <y-m>  0.144100 </y-m>
+      <z-m> -0.000876 </z-m>
+      <pitch-deg>    15 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Left -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m>  2.66380 </x-m>
+      <y-m> -1.01665 </y-m>
+      <z-m>  0.04025 </z-m>
+      <pitch-deg>    -5 </pitch-deg>
+      <heading-deg> 145 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> 2.66380 </x-m>
+      <y-m> 1.01665 </y-m>
+      <z-m> 0.04025 </z-m>
+      <pitch-deg>     -5 </pitch-deg>
+      <heading-deg> -145 </heading-deg>
+    </offsets>
+  </model>
 
 </PropertyList>
-

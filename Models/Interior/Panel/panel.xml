@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Based on : http://themekgpproject.com/gallery/2/displayimage.php?pid=1665 -->
 
 <PropertyList>
 
@@ -16,8 +18,26 @@
     <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
     <offsets>
       <x-m>  0.231 </x-m>
-      <y-m> -0.240 </y-m>
-      <z-m>  0.080 </z-m>
+      <y-m> -0.383 </y-m>
+      <z-m> -0.047 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.231 </x-m>
+      <y-m> -0.338 </y-m>
+      <z-m> -0.047 </z-m>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.231 </x-m>
+      <y-m> -0.293 </y-m>
+      <z-m> -0.047 </z-m>
     </offsets>
   </model>
 
@@ -25,9 +45,49 @@
   <model>
     <path>Aircraft/B-17/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
+      <x-m>  0.229 </x-m>
+      <y-m> -0.040 </y-m>
+      <z-m>  0.058 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
       <x-m>  0.228 </x-m>
-      <y-m> -0.062 </y-m>
-      <z-m>  0.036 </z-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.058 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.228 </x-m>
+      <y-m> -0.076 </y-m>
+      <z-m> -0.021 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.226 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m> -0.021 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.228 </x-m>
+      <y-m> -0.188 </y-m>
+      <z-m> -0.021 </z-m>
     </offsets>
   </model>
 
@@ -36,9 +96,187 @@
     <path>Aircraft/B-17/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.230 </x-m>
-      <y-m> -0.167 </y-m>
-      <z-m>  0.036 </z-m>
+      <y-m> -0.132 </y-m>
+      <z-m> -0.021 </z-m>
     </offsets>
+  </model>
+
+  <!-- MANIFOLD -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/manifold/manleft.xml</path>
+    <offsets>
+      <x-m> 0.227 </x-m>
+      <y-m> 0.040 </y-m>
+      <z-m> 0.053 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/manifold/manright.xml</path>
+    <offsets>
+      <x-m> 0.227 </x-m>
+      <y-m> 0.097 </y-m>
+      <z-m> 0.053 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/rpm/rpmleft.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m> -0.004 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/rpm/rpmright.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.097 </y-m>
+      <z-m> -0.004 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FLAPSGEAR -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m>  0.228 </x-m>
+      <y-m>  0.097 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUELPRESSURE -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/fuelpress/fuelpressleft.xml</path>
+    <offsets>
+      <x-m> 0.227 </x-m>
+      <y-m> 0.162 </y-m>
+      <z-m> 0.027 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/fuelpress/fuelpressright.xml</path>
+    <offsets>
+      <x-m> 0.227 </x-m>
+      <y-m> 0.215 </y-m>
+      <z-m> 0.027 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OILPRESSURE -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/oilpress/oilpressleft.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.162 </y-m>
+      <z-m> -0.030 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/oilpress/oilpressright.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.215 </y-m>
+      <z-m> -0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OILTEMPRATURE -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/oiltemp/oiltempleft.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.162 </y-m>
+      <z-m> -0.084 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/oiltemp/oiltempright.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.215 </y-m>
+      <z-m> -0.084 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RRC -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/rrc/rrc.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m> -0.345 </y-m>
+      <z-m>  0.015 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CARBTEMPERATURE -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/carbtemp/carbleft.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.220 </y-m>
+      <z-m> -0.148 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/carbtemp/carbright.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.274 </y-m>
+      <z-m> -0.148 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CYL -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/cyl/cylleft.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.107 </y-m>
+      <z-m> -0.148 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/cyl/cylright.xml</path>
+    <offsets>
+      <x-m>  0.227 </x-m>
+      <y-m>  0.161 </y-m>
+      <z-m> -0.148 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PDI -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/pdi/pdi.xml</path>
+    <offsets>
+      <x-m>  0.230 </x-m>
+      <y-m> -0.274 </y-m>
+      <z-m>  0.031 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VOLTMETER -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/voltmeter/voltmeter.xml</path>
+    <offsets>
+      <x-m>  0.229 </x-m>
+      <y-m> -0.430 </y-m>
+      <z-m> -0.088 </z-m>
+    </offsets>
+  </model>
+
+  <!-- SCREWS -->
+  <model>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/screws/all-screws.xml</path>
   </model>
 
 </PropertyList>
