@@ -7,7 +7,7 @@ OBJECT poly
 name "Circle"
 data 6
 Circle
-texture "colors.png"
+texture "switch.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -561,7 +561,7 @@ OBJECT poly
 name "Switch"
 data 10
 Sphere.036
-texture "colors.png"
+texture "switch.png"
 texrep 1 1
 crease 30.000000
 numvert 642
@@ -5469,7 +5469,7 @@ OBJECT poly
 name "SwitchNut"
 data 10
 Circle.132
-texture "colors.png"
+texture "switch.png"
 texrep 1 1
 crease 30.000000
 numvert 60
@@ -5875,7 +5875,7 @@ OBJECT poly
 name "SwitchRot"
 data 10
 Circle.123
-texture "colors.png"
+texture "switch.png"
 texrep 1 1
 crease 30.000000
 numvert 225

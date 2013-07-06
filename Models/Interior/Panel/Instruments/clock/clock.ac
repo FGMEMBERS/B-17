@@ -8,7 +8,7 @@ name "Face"
 loc 0 0 -0
 data 4
 Face
-texture "colors.png"
+texture "clock.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 33
@@ -244,7 +244,7 @@ name "HourHand"
 loc 0 0 -0
 data 8
 HourHand
-texture "colors.png"
+texture "clock.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -313,7 +313,7 @@ name "MinuteHand"
 loc 0 0 -0
 data 10
 MinuteHand
-texture "colors.png"
+texture "clock.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -382,7 +382,7 @@ name "SecondHand"
 loc 0 0 -0
 data 10
 SecondHand
-texture "colors.png"
+texture "clock.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -461,7 +461,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "clock.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 192
@@ -1784,7 +1784,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "colors.png"
+texture "clock.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 68
