@@ -24,7 +24,7 @@
   </model>
 
   <model>
-    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/nav-lights.xml</path>
     <offsets>
       <x-m>  0.231 </x-m>
       <y-m> -0.338 </y-m>
@@ -33,7 +33,7 @@
   </model>
  
   <model>
-    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/divers/strobe-lights.xml</path>
     <offsets>
       <x-m>  0.231 </x-m>
       <y-m> -0.293 </y-m>
@@ -274,10 +274,10 @@
     </offsets>
   </model>
 
-  <!-- SCREWS -->
+  <!-- SCREWS
   <model>
     <path>Aircraft/B-17/Models/Interior/Panel/Instruments/screws/all-screws.xml</path>
-  </model>
+  </model> -->
 
   <!-- Pedestal -->
   <model>

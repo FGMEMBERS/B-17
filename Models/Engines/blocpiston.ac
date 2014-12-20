@@ -9,7 +9,7 @@ data 7
 bougies
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 444
 -0.112768 0.500812 -0.000301
 -0.112768 0.491167 -0.006746
@@ -3373,7 +3373,7 @@ data 6
 caches
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 583
 -0.125627 0.621437 0.128965
 -0.125339 0.619114 0.129857
@@ -8072,7 +8072,7 @@ data 5
 cames
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 573
 -0.15745 0.304235 0.041018
 -0.158495 0.303976 0.042934
@@ -11993,7 +11993,7 @@ data 6
 ecrous
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 1128
 -0.109331 0.60691 -0.075915
 -0.11552 0.596478 -0.071654
@@ -20564,7 +20564,7 @@ data 7
 pistons
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 4821
 -0.101029 0.278717 -0.01648
 -0.095963 0.278717 -0.032032
@@ -54816,7 +54816,7 @@ data 8
 souflets
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 1576
 -0.15745 0.304235 -0.040897
 -0.158495 0.303976 -0.042813
@@ -66659,7 +66659,7 @@ data 6
 tuyaux
 texture "engine.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 1440
 -0.123726 0.595399 0.079322
 -0.124829 0.595988 0.079321

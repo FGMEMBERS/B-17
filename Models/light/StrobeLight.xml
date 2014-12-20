@@ -5,7 +5,6 @@
   <path>WhiteLight.ac</path>
 
   <animation>
-    <type>noshadow</type>
     <object-name>Light</object-name>
   </animation>
 
@@ -13,9 +12,6 @@
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>Light</object-name>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
   </effect>
 
   <animation>
@@ -61,7 +57,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>controls/lighting/nav-lights</property>
+      <property>controls/lighting/strobe-lights</property>
     </condition>
   </animation>
 
