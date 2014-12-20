@@ -1,4 +1,4 @@
-English/FranÁais
+English/Fran√ßais
 
 [English]
 ----------
@@ -28,16 +28,18 @@ Thanks
 
 Bret HARRISON for new liveries
 Detlef FABER for changes on 3D model
+Fabien BARBIER for turret system
 
 ===============
 BARANGER Emmanuel
 May, 09, 2009. 
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
-[FranÁais]
+[Fran√ßais]
 ----------
 
 Un peu d'histoire
@@ -48,13 +50,13 @@ Boeing B 17 "Forteresse volante"
 
 Constructeur                  :
 Type                          :
-AnnÈe                         :
+Ann√©e                         :
 Moteur                        :
 Envergure                     :
 Longueur                      :
 Hauteur                       :
-Poids ‡ vide                  :
-Vitesse de croisiËre          :
+Poids √† vide                  :
+Vitesse de croisi√®re          :
 Equipage                      :
 
 
@@ -64,12 +66,14 @@ Quelques touches utiles :
 Remerciements
 =============
 
-Brett HARRISON pour les nouvelle livrÈes.
-Detlef FABER pour les modifications du modËle 3D
+Brett HARRISON pour les nouvelle livr√©es.
+Detlef FABER pour les modifications du mod√®le 3D
+Fabien BARBIER pour le syst√®me des tourelles
 
 ===============
 BARANGER Emmanuel
 09 Mai 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr

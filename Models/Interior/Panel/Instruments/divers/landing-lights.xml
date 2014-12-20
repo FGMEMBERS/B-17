@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -11,10 +11,10 @@
     <object-name>SwitchNut</object-name>
     <object-name>SwitchRot</object-name>
     <emission>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
     </emission>
   </animation>
 
@@ -27,7 +27,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>controls/switches/landing-light</property>
+        <property>controls/lighting/landing-lights</property>
       </binding>
     </action>
   </animation>
@@ -35,7 +35,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Switch</object-name>
-    <property>controls/switches/landing-light</property>
+    <property>controls/lighting/landing-lights</property>
     <factor> 35 </factor>
     <axis>
       <x>  0 </x>

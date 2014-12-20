@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -54,9 +54,7 @@
     <object-name>antenne</object-name>
     <object-name>blindage</object-name>
     <object-name>bendix1</object-name>
-    <object-name>bendix2</object-name>
     <object-name>tourelle1</object-name>
-    <object-name>tourelle2</object-name>
     <object-name>caches</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
@@ -77,13 +75,12 @@
     <object-name>axeD2</object-name>
     <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>cables</object-name>
     
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
-    <object-name>verretourelle1</object-name>
-    <object-name>verretourelle2</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
     <object-name>propblurGI</object-name>
@@ -94,6 +91,36 @@
     <object-name>propdiscGE</object-name>
   </animation>
 
+  <!-- Tourelle Bendix de nez -->
+  <model>
+    <path>Aircraft/B-17/Models/turretnoze.xml</path>
+    <offsets>
+      <x-m> -10.07524 </x-m>
+      <y-m>   0.00000 </y-m>
+      <z-m>  -1.36947 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Tourelle de toit -->
+  <model>
+    <path>Aircraft/B-17/Models/turretup.xml</path>
+    <offsets>
+      <x-m> -6.02222 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  1.27594 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Tourelle de desous -->
+  <model>
+    <path>Aircraft/B-17/Models/turretdown.xml</path>
+    <offsets>
+      <x-m> -0.16461 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.08884 </z-m>
+    </offsets>
+  </model>
+  
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
@@ -121,9 +148,7 @@
     <object-name>antenne</object-name>
     <object-name>blindage</object-name>
     <object-name>bendix1</object-name>
-    <object-name>bendix2</object-name>
     <object-name>tourelle1</object-name>
-    <object-name>tourelle2</object-name>
     <object-name>caches</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
@@ -144,8 +169,19 @@
     <object-name>axeD2</object-name>
     <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>cables</object-name>
+    
+    <!-- Turret noze -->
+    <object-name>bendix2</object-name>
+    <object-name>trousbendix2</object-name>
+    <!-- Turret up -->
+    <object-name>tourellemobile</object-name>
+    <object-name>inttourellemobile</object-name>
+    <!-- Turret down -->
+    <object-name>tourelle2</object-name>
+    <object-name>inttourelle2</object-name>
     
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -155,18 +191,10 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
@@ -192,89 +220,33 @@
     <object-name>antenne</object-name>
     <object-name>blindage</object-name>
     <object-name>bendix1</object-name>
-    <object-name>bendix2</object-name>
     <object-name>tourelle1</object-name>
-    <object-name>tourelle2</object-name>
     <object-name>caches</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <object-name>aileronD</object-name>
     <object-name>aileronG</object-name>
-  </effect>
-
-  <effect>
-    <inherits-from>Effects/model-combined-deferred</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>fuselage</object-name>
-    <object-name>ailes</object-name>
-    <object-name>aileronG</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>profondeur</object-name>
-    <object-name>derive</object-name>
-    <object-name>direction</object-name>
-    <object-name>moteurGE</object-name>
-    <object-name>ailetteGE</object-name>
-    <object-name>bolGE</object-name>
-    <object-name>moteurGI</object-name>
-    <object-name>ailetteGI</object-name>
-    <object-name>bolGI</object-name>
-    <object-name>moteurDI</object-name>
-    <object-name>ailetteDI</object-name>
-    <object-name>bolDI</object-name>
-    <object-name>moteurDE</object-name>
-    <object-name>ailetteDE</object-name>
-    <object-name>bolDE</object-name>
-    <object-name>antenne</object-name>
-    <object-name>blindage</object-name>
-    <object-name>bendix1</object-name>
+    <!-- Turret noze -->
     <object-name>bendix2</object-name>
-    <object-name>tourelle1</object-name>
+    <object-name>trousbendix2</object-name>
+    <!-- Turret up -->
+    <object-name>tourellemobile</object-name>
+    <object-name>inttourellemobile</object-name>
+    <!-- Turret down -->
     <object-name>tourelle2</object-name>
-    <object-name>caches</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>aileronG</object-name>
+    <object-name>inttourelle2</object-name>   
   </effect>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>verretourelle1</object-name>
-    <object-name>verretourelle2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>verretourelle1</object-name>
-    <object-name>verretourelle2</object-name>
-    <object-name>propblurGE</object-name>
-    <object-name>propdiscGE</object-name>
-    <object-name>propblurGI</object-name>
-    <object-name>propdiscGI</object-name>
-    <object-name>propblurGI</object-name>
-    <object-name>propdiscGI</object-name>
-    <object-name>propblurGE</object-name>
-    <object-name>propdiscGE</object-name>
-  </animation>
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/B-17/Models/Effects/Glass/glass</inherits-from>
     <object-name>verriere</object-name>
-    <object-name>verretourelle1</object-name>
-    <object-name>verretourelle2</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>verriere</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
     <object-name>propblurGI</object-name>
@@ -284,7 +256,7 @@
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
   </effect>
-
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/B-17/Models/shadow.xml</path>
@@ -297,15 +269,9 @@
 
   <!-- Intérieur -->
   <model>
-    <name>Interieur</name>
+    <usage>Interior</usage>
     <path>Aircraft/B-17/Models/Interior/interior.xml</path>
   </model>
-
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
 
   <!-- Cranking effects -->
   <model>
@@ -933,17 +899,23 @@
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>RoueCompleteA</name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueCompleteA</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 0 </ind><dep> 85 </dep></entry>
       <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
-      <x-m>  5.561 </x-m>
+      <x-m>  5.729 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.671 </z-m>
+      <z-m> -0.783 </z-m>
     </center>
     <axis>
       <x>  0 </x>
@@ -1092,50 +1064,6 @@
   </animation>
 
   <!-- Mitrailleuses -->
-  <!-- Noze -->
-  <model>
-    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
-    <offsets>
-      <x-m> -10.59025 </x-m>
-      <y-m>  -0.15710 </y-m>
-      <z-m>  -1.59888 </z-m>
-      <pitch-deg> -30 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
-    <offsets>
-      <x-m> -10.59025 </x-m>
-      <y-m>   0.15710 </y-m>
-      <z-m>  -1.59888 </z-m>
-      <pitch-deg> -30 </pitch-deg>
-    </offsets>
-  </model>
-
-  <!-- down Turet -->
-  <model>
-    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
-    <offsets>
-      <x-m>  0.47656 </x-m>
-      <y-m> -0.14410 </y-m>
-      <z-m> -1.54588 </z-m>
-      <pitch-deg>    -6 </pitch-deg>
-      <heading-deg> 180 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
-    <offsets>
-      <x-m>  0.47656 </x-m>
-      <y-m>  0.14410 </y-m>
-      <z-m> -1.54588 </z-m>
-      <pitch-deg>    -6 </pitch-deg>
-      <heading-deg> 180 </heading-deg>
-    </offsets>
-  </model>
-
   <!-- Left noze -->
   <model>
     <path>Aircraft/B-17/Models/Guns/guns.xml</path>
@@ -1155,29 +1083,6 @@
       <y-m>  1.05934 </y-m>
       <z-m> -0.26133 </z-m>
       <heading-deg> -30 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Up turet -->
-  <model>
-    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
-    <offsets>
-      <x-m> -5.64344 </x-m>
-      <y-m> -0.15310 </y-m>
-      <z-m>  1.45412 </z-m>
-      <pitch-deg>    15 </pitch-deg>
-      <heading-deg> 180 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
-    <offsets>
-      <x-m> -5.64344 </x-m>
-      <y-m>  0.15310 </y-m>
-      <z-m>  1.45412 </z-m>
-      <pitch-deg>    15 </pitch-deg>
-      <heading-deg> 180 </heading-deg>
     </offsets>
   </model>
 
@@ -1206,26 +1111,88 @@
 
   <!-- Left -->
   <model>
+    <name>CenterLeft</name>
     <path>Aircraft/B-17/Models/Guns/guns.xml</path>
     <offsets>
       <x-m>  2.66380 </x-m>
       <y-m> -1.01665 </y-m>
       <z-m>  0.04025 </z-m>
-      <pitch-deg>    -5 </pitch-deg>
-      <heading-deg> 145 </heading-deg>
     </offsets>
   </model>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CenterLeft</object-name>
+    <property>sim/model/turret[3]/heading</property>
+    <center>
+      <x-m>  2.66380 </x-m>
+      <y-m> -1.01665 </y-m>
+      <z-m>  0.04025 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CenterLeft</object-name>
+    <property>sim/model/turret[3]/pitch</property>
+    <center>
+      <x-m>  2.66380 </x-m>
+      <y-m> -1.01665 </y-m>
+      <z-m>  0.04025 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>  
 
   <!-- Right -->
   <model>
+    <name>CenterRight</name>
     <path>Aircraft/B-17/Models/Guns/guns.xml</path>
     <offsets>
       <x-m> 2.66380 </x-m>
       <y-m> 1.01665 </y-m>
       <z-m> 0.04025 </z-m>
-      <pitch-deg>     -5 </pitch-deg>
-      <heading-deg> -145 </heading-deg>
     </offsets>
   </model>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CenterRight</object-name>
+    <property>sim/model/turret[2]/heading</property>
+    <center>
+      <x-m> 2.66380 </x-m>
+      <y-m> 1.01665 </y-m>
+      <z-m> 0.04025 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CenterRight</object-name>
+    <property>sim/model/turret[2]/pitch</property>
+    <center>
+      <x-m> 2.66380 </x-m>
+      <y-m> 1.01665 </y-m>
+      <z-m> 0.04025 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>  
 
 </PropertyList>

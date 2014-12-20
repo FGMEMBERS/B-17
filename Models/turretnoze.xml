@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>turretnoze.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>bendix2</object-name>
+    <object-name>trousbendix2</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Mitrailleuses -->
+  <model>
+    <name>InDaNose1</name>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -0.51501 </x-m>
+      <y-m> -0.15710 </y-m>
+      <z-m> -0.12941 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>InDaNose2</name>
+    <path>Aircraft/B-17/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -0.51501 </x-m>
+      <y-m>  0.15710 </y-m>
+      <z-m> -0.12941 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Animation de la tourelle -->
+  <animation>
+    <name>NoseTurret</name>
+    <object-name>bendix2</object-name>
+    <object-name>trousbendix2</object-name>
+    <object-name>InDaNose1</object-name>
+    <object-name>InDaNose2</object-name>
+  </animation>
+  
+  <animation>
+    <name>NoseTurretGuns</name>
+    <object-name>InDaNose1</object-name>
+    <object-name>InDaNose2</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>NoseTurret</object-name>
+    <property>sim/model/turret[4]/heading</property>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>NoseTurretGuns</object-name>
+    <property>sim/model/turret[4]/pitch</property>
+    <center>
+      <x-m> -0.30526 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.12124 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
