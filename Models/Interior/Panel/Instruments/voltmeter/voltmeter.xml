@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>voltmeter.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-17/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>systems/electrical/outputs/volts</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 40 </ind><dep> 73 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.003859 </x-m>
+      <y-m>  0.000000 </y-m>
+      <z-m> -0.016070 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

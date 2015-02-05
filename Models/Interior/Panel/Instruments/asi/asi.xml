@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-17/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <factor> 1.852 </factor>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  50 </ind><dep>  24 </dep></entry>
+      <entry><ind> 100 </ind><dep>  90 </dep></entry>
+      <entry><ind> 150 </ind><dep> 153 </dep></entry>
+      <entry><ind> 200 </ind><dep> 207 </dep></entry>
+      <entry><ind> 300 </ind><dep> 247 </dep></entry>
+      <entry><ind> 400 </ind><dep> 291 </dep></entry>
+      <entry><ind> 500 </ind><dep> 338 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

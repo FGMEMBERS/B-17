@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="b17-base.xml">
+
+  <sim>
+
+    <description>Boeing B 17 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>b17-yasim</aero>
+
+  </sim>
+    
+</PropertyList>
