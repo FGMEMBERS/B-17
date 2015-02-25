@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> origin/master
   <particlesystem>
     <name>tyre-smoke-n</name>
     <texture>smoke.png</texture>
     <emissive>false</emissive>
     <lighting>false</lighting>
+<<<<<<< HEAD
     
     <condition>
       <and>
@@ -15,10 +20,19 @@
         <greater-than>
           <!-- /gear/gear[0]/rollspeed-ms -->
           <property>sim/multiplay/generic/float[15]</property>
+=======
+
+    <condition>
+      <and>
+        <property>/gear/gear[0]/wow</property>
+        <greater-than>
+          <property>/gear/gear[0]/rollspeed-ms</property>
+>>>>>>> origin/master
           <value>5</value>
         </greater-than>
       </and>
     </condition>
+<<<<<<< HEAD
     
     <attach>world</attach>
     
@@ -26,6 +40,15 @@
       <type>point</type>
     </placer>
     
+=======
+
+    <attach>world</attach>
+
+    <placer>
+      <type>point</type>
+    </placer>
+
+>>>>>>> origin/master
     <shooter>
       <theta-min-deg>  45 </theta-min-deg>
       <theta-max-deg>  85 </theta-max-deg>
@@ -44,16 +67,26 @@
         <z-min-deg-sec> -15 </z-min-deg-sec>
       </rotation-speed>
     </shooter>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <counter>
       <particles-per-sec>
         <value>150</value>
         <spread>0</spread>
       </particles-per-sec>
     </counter>
+<<<<<<< HEAD
     
     <align>billboard</align>
     
+=======
+
+    <align>billboard</align>
+
+>>>>>>> origin/master
     <particle>
       <start>
         <color>
@@ -77,13 +110,23 @@
       <mass-kg>  0.025 </mass-kg>
       <radius-m> 0.175 </radius-m>
     </particle>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <program>
       <fluid>   air  </fluid>
       <gravity> true </gravity>
       <wind>    true </wind>
     </program>
+<<<<<<< HEAD
     
   </particlesystem>
   
+=======
+
+  </particlesystem>
+
+>>>>>>> origin/master
 </PropertyList>

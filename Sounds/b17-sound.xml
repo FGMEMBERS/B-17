@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<<<<<<< HEAD
 
 <PropertyList>
   
   <fx>
     
+=======
+ 
+<PropertyList>
+
+    <fx>
+
+>>>>>>> origin/master
     <!-- Moteur 1 -->
     <crank>
       <name>engstart</name>
@@ -15,7 +23,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>crank</name>
       <mode>looped</mode>
@@ -36,7 +48,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>cough</name>
       <path>Aircraft/B-17/Sounds/starter.wav</path>
@@ -51,7 +67,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -79,7 +99,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
@@ -107,7 +131,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <!-- Moteur 2 -->
     <crank>
       <name>engstart</name>
@@ -119,7 +147,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>crank</name>
       <mode>looped</mode>
@@ -140,7 +172,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>cough</name>
       <path>Aircraft/B-17/Sounds/starter.wav</path>
@@ -155,7 +191,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -183,7 +223,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
@@ -211,7 +255,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <!-- Moteur 3 -->
     <crank>
       <name>engstart</name>
@@ -223,7 +271,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>crank</name>
       <mode>looped</mode>
@@ -244,7 +296,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>cough</name>
       <path>Aircraft/B-17/Sounds/starter.wav</path>
@@ -259,7 +315,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -287,7 +347,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
@@ -315,7 +379,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <!-- Moteur 4 -->
     <crank>
       <name>engstart</name>
@@ -327,7 +395,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>crank</name>
       <mode>looped</mode>
@@ -348,7 +420,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <crank>
       <name>cough</name>
       <path>Aircraft/B-17/Sounds/starter.wav</path>
@@ -363,7 +439,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -391,7 +471,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
@@ -419,7 +503,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
@@ -439,7 +527,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
@@ -448,7 +540,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <gear>
       <name>gear-lock</name>
       <path>Sounds/gear-lck.wav</path>
@@ -461,7 +557,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <squeal>
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -496,7 +596,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </squeal>
+<<<<<<< HEAD
     
+=======
+ 
+>>>>>>> origin/master
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -508,7 +612,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </flap>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <wind>
       <name>wind</name>
       <mode>looped</mode>
@@ -529,7 +637,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </wind>
+<<<<<<< HEAD
     
+=======
+ 
+>>>>>>> origin/master
     <stall>
       <name>stall</name>
       <mode>looped</mode>
@@ -542,7 +654,13 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </stall>
+<<<<<<< HEAD
     
   </fx>
   
+=======
+ 
+  </fx>
+ 
+>>>>>>> origin/master
 </PropertyList>

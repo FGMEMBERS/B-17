@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
+<<<<<<< HEAD
   
   <particlesystem>
     <name>smoke</name>
@@ -21,10 +22,31 @@
         <equals>
           <!-- engines/engine[2]/cranking -->
           <property>sim/multiplay/generic/float[10]</property>
+=======
+
+  <particlesystem>
+    <name>smoke</name>
+    <type>normal</type>
+
+    <texture>smoke.png</texture>
+
+    <emissive type="bool">false</emissive>
+    <lighting type="bool">false</lighting>
+
+    <condition>
+      <and>
+        <greater-than>
+          <property>engines/engine[2]/rpm</property>
+          <value>30</value>
+        </greater-than>
+        <equals>
+          <property>engines/engine[2]/cranking</property>
+>>>>>>> origin/master
           <value>true</value>
         </equals>
       </and>
     </condition>
+<<<<<<< HEAD
     
     <attach>world</attach>
     
@@ -32,6 +54,15 @@
       <type>point</type>
     </placer>
     
+=======
+
+    <attach>world</attach>
+
+    <placer>
+      <type>point</type>
+    </placer>
+
+>>>>>>> origin/master
     <shooter>
       <theta-min-deg>  60 </theta-min-deg>
       <theta-max-deg> 120 </theta-max-deg>
@@ -50,14 +81,22 @@
         <z-max-deg-sec>0</z-max-deg-sec>
       </rotation-speed>
     </shooter>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <counter>
       <particles-per-sec>
         <value>40</value>
         <spread>20</spread>
       </particles-per-sec>
     </counter>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     <particle>
       <start>
         <color>
@@ -70,7 +109,11 @@
           <value>0.1</value>
         </size>
       </start>
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> origin/master
       <end>
         <color>
           <red><value>   0.93 </value></red>
@@ -82,6 +125,7 @@
           <value>1.0</value>
         </size>
       </end>
+<<<<<<< HEAD
       
       <life-sec>
         <value>3.0</value>
@@ -91,12 +135,31 @@
       <radius-m> 0.10 </radius-m>
     </particle>
     
+=======
+
+      <life-sec>
+        <value>3.0</value>
+      </life-sec>
+
+      <mass-kg>  0.02 </mass-kg>
+      <radius-m> 0.1 </radius-m>
+    </particle>
+
+>>>>>>> origin/master
     <program>
       <fluid>               air  </fluid>
       <gravity type="bool"> true </gravity>
       <wind typ="bool">     true </wind>
     </program>
+<<<<<<< HEAD
     
   </particlesystem>
   
 </PropertyList>
+=======
+
+  </particlesystem>
+
+</PropertyList>
+
+>>>>>>> origin/master

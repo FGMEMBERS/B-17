@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+<<<<<<< HEAD
 <PropertyList include="b17-base.xml">
+=======
+<!-- <PropertyList include="b17-jsbsim-cnf.xml"> -->
+<PropertyList include="b17-yasim-cnf.xml">
+>>>>>>> origin/master
 
   <sim>
     
     <description>Boeing B 17 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM)</author>
+<<<<<<< HEAD
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
     
@@ -16,9 +22,20 @@
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
       <cockpit type="int"> 2 </cockpit>
+=======
+    
+    <rating>
+      <FDM type="int">     1 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 1 </cockpit>
+>>>>>>> origin/master
       <model type="int">   4 </model>
     </rating>
 
   </sim>
 
 </PropertyList>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master

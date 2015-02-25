@@ -5,12 +5,22 @@
   <path>RedLight.ac</path>
 
   <animation>
+<<<<<<< HEAD
+=======
+    <type>noshadow</type>
+>>>>>>> origin/master
     <object-name>Light</object-name>
   </animation>
 
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>Light</object-name>
+<<<<<<< HEAD
+=======
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+>>>>>>> origin/master
   </effect>
 
   <animation>
@@ -28,9 +38,16 @@
     <type>material</type>
     <object-name>Light</object-name>
     <emission>
+<<<<<<< HEAD
       <red>   2 </red>
       <green> 0 </green>
       <blue>  0 </blue>
+=======
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+>>>>>>> origin/master
     </emission>
   </animation>
 

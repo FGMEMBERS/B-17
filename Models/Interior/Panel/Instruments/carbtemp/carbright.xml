@@ -16,22 +16,53 @@
     <object-name>vitre</object-name>
   </animation>
 
+<<<<<<< HEAD
   <!-- working for Rembrandt -->
   <effect>
     <inherits-from>Aircraft/B-17/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   
+=======
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
+
+>>>>>>> origin/master
   <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>needleL</object-name>
     <object-name>needleR</object-name>
     <emission>
+<<<<<<< HEAD
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.9 </red>
       <green> 0.5 </green>
       <blue>  0.2 </blue>
+=======
+      <red>   1.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+>>>>>>> origin/master
     </emission>
   </animation>
 
@@ -82,3 +113,7 @@
   </animation>
 
 </PropertyList>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
