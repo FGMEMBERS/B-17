@@ -14,47 +14,14 @@
     
     <!-- Objets transparents -->
     <object-name>intverriere</object-name>
-<<<<<<< HEAD
-=======
-    <object-name>intverretourelle1</object-name>
-    <object-name>intverretourelle2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intverriere</object-name>
-    <object-name>intverretourelle1</object-name>
-    <object-name>intverretourelle2</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intverriere</object-name>
-    <object-name>intverretourelle1</object-name>
-    <object-name>intverretourelle2</object-name>
->>>>>>> origin/master
   </animation>
 
   <!-- working for Rembrandt -->
   <effect>
-<<<<<<< HEAD
     <inherits-from>Aircraft/B-17/Models/Effects/Glass/glass</inherits-from>
     <object-name>intverriere</object-name>
   </effect>
   
-=======
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>intverriere</object-name>
-    <object-name>intverretourelle1</object-name>
-    <object-name>intverretourelle2</object-name>
-  </effect>
-
->>>>>>> origin/master
   <!-- Planche de bord -->
   <model>
     <path>Aircraft/B-17/Models/Interior/Panel/panel.xml</path>
@@ -102,11 +69,7 @@
       <x-m> 10.512 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.262 </z-m>
-<<<<<<< HEAD
       <heading-deg> 180 </heading-deg>
-=======
-      <heading-deg> 180.0 </heading-deg>
->>>>>>> origin/master
     </offsets>
   </model>
 

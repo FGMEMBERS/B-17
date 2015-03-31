@@ -2,19 +2,11 @@
 
 <PropertyList>
 
-<<<<<<< HEAD
   <sim include="Systems/views.xml">
  
 
     <description>Boeing B 17 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM)</author>    
-=======
-  <sim include="Nasal/views.xml">
- 
-
-    <description>Boeing B 17 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
->>>>>>> origin/master
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
    
@@ -29,7 +21,6 @@
       <livery>
         <file type="string">default</file>
       </livery>
-<<<<<<< HEAD
       <turret n="0">
         <heading>180</heading>
         <pitch>0</pitch>
@@ -51,8 +42,6 @@
         <pitch>-30</pitch>
       </turret>
       
-=======
->>>>>>> origin/master
     </model>
 
     <sound>
@@ -62,7 +51,6 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-<<<<<<< HEAD
         <int   n="0"  type="int"> 0 </int>                                         <!-- 0 immat -->
         <int   n="1"  type="int"> 0 </int>                                         <!-- 1 immat -->
         <int   n="2"  type="int"> 0 </int>                                         <!-- 2 immat -->
@@ -104,48 +92,11 @@
     </flaps>
 
     <help include="Systems/help.xml"/>
-=======
-        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
-        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
-        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
-        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
-        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
-        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
-        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
-        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
-        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
-      </generic>
-    </multiplay>
-
-    <flaps>
-      <setting>0.000</setting>
-      <setting>0.25</setting>
-      <setting>0.50</setting>
-      <setting>0.75</setting>
-      <setting>1.000</setting>
-    </flaps>
-
-    <help>
-      <title>Boeing B 17</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close door</desc>
-      </key>
-    </help>
->>>>>>> origin/master
 
     <menubar include="Dialogs/b17-menu.xml"/>
 
   </sim>
 
-<<<<<<< HEAD
   <input>
     <keyboard include="Systems/b17-keyboard.xml"/>
   </input>
@@ -160,9 +111,6 @@
       <strobe-lights type="bool">true</strobe-lights>
     </lighting>
   <!--
-=======
-  <controls>
->>>>>>> origin/master
     <engines>
       <engine n="0">
         <boost type="double">0</boost>
@@ -181,15 +129,10 @@
         <magnetos>0</magnetos>
       </engine>
     </engines>
-<<<<<<< HEAD
     -->
   </controls>
   
   <!--
-=======
-  </controls>
-
->>>>>>> origin/master
   <engines>
     <engine n="0">
       <engine-num type="int">0</engine-num>
@@ -212,15 +155,7 @@
       <running>false</running>
     </engine>
   </engines>
-<<<<<<< HEAD
   -->
-=======
-
-  <input>
-    <keyboard include="Nasal/b17-keyboard.xml"/>
-  </input>
- 
->>>>>>> origin/master
   <nasal>
     <doors>
       <file>Aircraft/B-17/Nasal/doors.nas</file>
@@ -229,14 +164,11 @@
       <file>Aircraft/B-17/Nasal/liveries.nas</file>
       <file>Aircraft/B-17/Nasal/light.nas</file>
     </b17>
-<<<<<<< HEAD
     <turrets>
       <file>Aircraft/B-17/Nasal/turrets.nas</file>
       <script>
       </script>
     </turrets>
-=======
->>>>>>> origin/master
   </nasal>
 
 </PropertyList>
