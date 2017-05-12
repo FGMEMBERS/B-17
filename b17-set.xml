@@ -30,7 +30,10 @@
       <tag>retractable-gear</tag>
       <tag>piston</tag>
       <tag>propeller</tag>
+      <tag>fixed-pitch</tag>
       <tag>radial</tag>
+      <tag>tail-dragger</tag>
+      <tag>four-engine</tag>
     </tags>
 
   </sim>
