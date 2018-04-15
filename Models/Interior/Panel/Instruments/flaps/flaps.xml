@@ -37,9 +37,10 @@
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> 180 </factor>
+    <offset-deg>180</offset-deg>
+    <factor>180</factor>
     <axis>
-      <x> -1 </x>
+      <x>  1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
