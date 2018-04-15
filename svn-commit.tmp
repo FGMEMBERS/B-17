@@ -1,0 +1,12 @@
+B-17:Add bombs.
+--Cette ligne, et les suivantes ci-dessous, seront ignorées--
+
+M    Models/Interior/interior.xml
+A    Models/weapons
+A    Models/weapons/all-bombs.xml
+A    Models/weapons/bomb.ac
+AM   Models/weapons/bomb.png
+A    Models/weapons/bomb.xml
+A    Models/weapons/explosion.xml
+A    Models/weapons/release.xml
+AM   Models/weapons/smoke.png
