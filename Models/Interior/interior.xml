@@ -73,4 +73,70 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.664 </z-m>
+    </offsets>
+  </model>
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.250 </z-m>
+    </offsets>
+  </model>
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.555 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.664 </z-m>
+    </offsets>
+  </model>
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.555 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.250 </z-m>
+    </offsets>
+  </model>
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.555 </x-m>
+      <y-m> +0.700 </y-m>
+      <z-m> -0.664 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.555 </x-m>
+      <y-m> +0.700 </y-m>
+      <z-m> -0.250 </z-m>
+    </offsets>
+  </model>
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> +0.700 </y-m>
+      <z-m> -0.664 </z-m>
+    </offsets>
+  </model>
+<model>
+    <path>Aircraft/B-17/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> +0.700 </y-m>
+      <z-m> -0.250 </z-m>
+    </offsets>
+  </model>
 </PropertyList>
+   

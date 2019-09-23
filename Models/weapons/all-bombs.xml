@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- 1 G -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 2 G -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 3 G -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m> -0.774 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m> -0.377 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 1 D -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -3.564 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 2 D -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -1.964 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 3 D -->
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -0.669 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -1.089 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m>  0.774 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-24-Liberator/Models/weapons/bomb.xml</path>
+    <offsets>
+      <x-m> -0.364 </x-m>
+      <y-m>  0.377 </y-m>
+      <z-m> -1.519 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
